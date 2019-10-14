@@ -377,8 +377,7 @@ be enabled by any website you load inside Electron.
 CSP allows the server serving content to restrict and control the resources
 Electron can load for that given web page. `https://example.com` should
 be allowed to load scripts from the origins you defined while scripts from
-`https://evil.attacker.com` should not be allowed to run. Defining a CSP is an
-easy way to improve your application's security.
+`https://evil.attacker.com` should not be allowed to run. Defining a CSP is a good way to improve your application's security.
 
 The following CSP will allow Electron to execute scripts from the current
 website and from `apis.example.com`.

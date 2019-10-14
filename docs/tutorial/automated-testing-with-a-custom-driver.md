@@ -2,7 +2,7 @@
 
 To write automated tests for your Electron app, you will need a way to "drive" your application. [Spectron](https://electronjs.org/spectron) is a commonly-used solution which lets you emulate user actions via [WebDriver](http://webdriver.io/). However, it's also possible to write your own custom driver using node's builtin IPC-over-STDIO. The benefit of a custom driver is that it tends to require less overhead than Spectron, and lets you expose custom methods to your test suite.
 
-To create a custom driver, we'll use Node.js' [child_process](https://nodejs.org/api/child_process.html) API. The test suite will spawn the Electron process, then establish a simple messaging protocol:
+To create a custom driver, we'll use Node.js' [child_process](https://nodejs.org/api/child_process.html) API. The test suite will spawn the Electron process, then establish a messaging protocol:
 
 ```js
 var childProcess = require('child_process')
@@ -66,8 +66,8 @@ class TestDriver {
     })
   }
 
-  // simple RPC call
-  // to use: driver.rpc('method', 1, 2, 3).then(...)
+  // Example RPC call
+  // To use: driver.rpc('method', 1, 2, 3).then(...)
   async rpc (cmd, ...args) {
     // send rpc request
     var msgId = this.rpcCalls.length
@@ -81,7 +81,7 @@ class TestDriver {
 }
 ```
 
-In the app, you'd need to write a simple handler for the RPC calls:
+In the app, you'd need to write a handler for the RPC calls:
 
 ```js
 if (process.env.APP_TEST_DRIVER) {

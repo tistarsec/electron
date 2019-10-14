@@ -730,7 +730,7 @@ and args, an array of arguments to be passed to your executable when it launches
 
 **Note:** On macOS, you can only register protocols that have been added to
 your app's `info.plist`, which can not be modified at runtime. You can however
-change the file with a simple text editor or script during build time.
+change the file with a text editor or script during build time.
 Please refer to [Apple's documentation][CFBundleURLTypes] for details.
 
 **Note:** In a Windows Store environment (when packaged as an `appx`) this API
@@ -829,7 +829,7 @@ re-add a removed item to a custom category earlier than that will result in the
 entire custom category being omitted from the Jump List. The list of removed
 items can be obtained using `app.getJumpListSettings()`.
 
-Here's a very simple example of creating a custom Jump List:
+Here's an example of creating a custom Jump List:
 
 ```javascript
 const { app } = require('electron')

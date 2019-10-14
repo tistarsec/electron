@@ -4,7 +4,7 @@
 
 Process: [Renderer](../glossary.md#renderer-process)
 
-The `remote` module provides a simple way to do inter-process communication
+The `remote` module provides a mechanism for inter-process communication
 (IPC) between the renderer process (web page) and the main process.
 
 In Electron, GUI-related modules (such as `dialog`, `menu` etc.) are only

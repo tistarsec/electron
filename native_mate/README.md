@@ -48,7 +48,7 @@ void Initialize(v8::Handle<v8::Object> exports) {
 * `object_template_builder_deprecated.h` - A handy utility for creation of `v8::ObjectTemplate`.
 * `wrappable.h` - Base class for C++ classes that want to be owned by the V8 GC.
   Wrappable objects are automatically deleted when GC discovers that nothing in
-  the V8 heap refers to them. This is also an easy way to expose C++ objects to
+  the V8 heap refers to them. This is also a better way to expose C++ objects to
   JavaScript.
 
 

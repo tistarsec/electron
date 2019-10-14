@@ -4,8 +4,7 @@ This page defines some terminology that is commonly used in Electron development
 
 ### ASAR
 
-ASAR stands for Atom Shell Archive Format. An [asar][asar] archive is a simple
-`tar`-like format that concatenates files into a single file. Electron can read
+ASAR stands for Atom Shell Archive Format. An [asar][asar] archive is a `tar`-like format that concatenates files into a single file. Electron can read
 arbitrary files from it without unpacking the whole file.
 
 The ASAR format was created primarily to improve performance on Windows... TODO

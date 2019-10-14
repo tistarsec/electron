@@ -38,7 +38,7 @@ new Node.js version is usually already in Electron.
 
 ## How to share data between web pages?
 
-To share data between web pages (the renderer processes) the simplest way is to
+To share data between web pages (the renderer processes), the recommended way is to
 use HTML5 APIs which are already available in browsers. Good candidates are
 [Storage API][storage], [`localStorage`][local-storage],
 [`sessionStorage`][session-storage], and [IndexedDB][indexed-db].

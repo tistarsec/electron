@@ -19,7 +19,7 @@ $ npm install --save-dev spectron
 ```
 
 ```javascript
-// A simple test to verify a visible window is opened with a title
+// A test to verify a visible window is opened with a title
 const Application = require('spectron').Application
 const assert = require('assert')
 

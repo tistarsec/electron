@@ -8,7 +8,7 @@ instead of web servers.
 The old "Quick Start" document that used to live here has been split up into
 two documents:
 
-* To check out how a simple Electron app is built, see
+* To check out how a prototypical Electron app is built, see
 [Writing Your First Electron App][first-app]
 * To check out the process architecture, see
 [Main and Renderer Processes][processes].

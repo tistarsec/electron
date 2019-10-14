@@ -3,7 +3,7 @@
 If your app runs with Electron 6.0.8 or later, you can now build it for Windows 10 on Arm. This considerably improves performance, but requires recompilation of any native modules used in your app. It may also require small fixups to your build and packaging scripts.
 
 ## Running a basic app
-If your app doesn't use any native modules, then it's really easy to create an Arm version of your app.
+If your app doesn't use any native modules, then it's comparatively more straightforward to create an Arm version of your app.
 
 1. Make sure that your app's `node_modules` directory is empty.
 2. Using a _Command Prompt_, run `set npm_config_arch=arm64` before running `npm install`/`yarn install` as usual.

@@ -12,7 +12,7 @@ tools, read on.
 
 ## Generating `asar` Archives
 
-An [asar][asar] archive is a simple tar-like format that concatenates files
+An [asar][asar] archive is a tar-like format that concatenates files
 into a single file. Electron can read arbitrary files from it without unpacking
 the whole file.
 

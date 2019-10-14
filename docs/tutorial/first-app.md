@@ -45,7 +45,7 @@ run the main process. An example of your `package.json` might look like this:
 
 __Note__: If the `main` field is not present in `package.json`, Electron will
 attempt to load an `index.js` (as Node.js does). If this was actually
-a simple Node application, you would add a `start` script that instructs `node`
+a Node application, you would add a `start` script that instructs `node`
 to execute the current package:
 
 ```json
@@ -59,8 +59,7 @@ to execute the current package:
 }
 ```
 
-Turning this Node application into an Electron application is quite simple - we
-merely replace the `node` runtime with the `electron` runtime.
+To turn this Node application into an Electron application we would replace the `node` runtime with the `electron` runtime.
 
 ```json
 {
@@ -101,7 +100,7 @@ const electron = require('electron')
 
 The `electron` module exposes features in namespaces. As examples, the lifecycle
 of the application is managed through `electron.app`, windows can be created
-using the `electron.BrowserWindow` class. A simple `main.js` file might wait
+using the `electron.BrowserWindow` class. A prototypical `main.js` file might wait
 for the application to be ready and open a window:
 
 ```javascript

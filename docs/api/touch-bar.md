@@ -70,8 +70,7 @@ immediately updates the escape item in the touch bar.
 
 ## Examples
 
-Below is an example of a simple slot machine touch bar game with a button
-and some labels.
+Below is an example of a slot machine touch bar game with a button and some labels.
 
 ```javascript
 const { app, BrowserWindow, TouchBar } = require('electron')

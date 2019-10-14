@@ -9,7 +9,7 @@ Program][developer-program], which costs money.
 
 ## How to Submit Your App
 
-The following steps introduce a simple way to submit your app to Mac App Store.
+The following steps showcase a pathway for submitting your app to Mac App Store.
 However, these steps do not ensure your app will be approved by Apple; you
 still need to read Apple's [Submitting Your App][submitting-your-app] guide on
 how to meet the Mac App Store requirements.
