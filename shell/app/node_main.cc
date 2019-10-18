@@ -133,16 +133,18 @@ int NodeMain(int argc, char* argv[]) {
       }
     } while (more == true);
 
-    node_debugger.Stop();
     exit_code = node::EmitExit(env);
     env->set_can_call_into_js(false);
     node::RunAtExit(env);
 
-    v8::Isolate* isolate = env->isolate();
     node::FreeEnvironment(env);
     node::FreeIsolateData(isolate_data);
 
+    v8::Isolate* isolate = env->isolate();
     gin_env.platform()->DrainTasks(isolate);
+
+    node_debugger.Stop();
+
     gin_env.platform()->CancelPendingDelayedTasks(isolate);
     gin_env.platform()->UnregisterIsolate(isolate);
   }
