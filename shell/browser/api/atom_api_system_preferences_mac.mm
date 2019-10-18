@@ -510,7 +510,7 @@ std::string SystemPreferences::GetColor(gin_helper::ErrorThrower thrower,
   if (color == "alternate-selected-control-text") {
     sysColor = [NSColor alternateSelectedControlTextColor];
     EmitDeprecationWarning(node::Environment::GetCurrent(thrower.isolate()),
-                           "Use selected-content-background instead.",
+                           "'alternate-selected-control-text' is deprecated as an input to getColor.  Use 'selected-content-background' instead.",
                            "electron");
   } else if (color == "control-background") {
     sysColor = [NSColor controlBackgroundColor];
