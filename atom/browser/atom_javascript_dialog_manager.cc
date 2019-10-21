@@ -46,8 +46,9 @@ void AtomJavaScriptDialogManager::RunJavaScriptDialog(
     return std::move(callback).Run(false, base::string16());
   }
 
-  if (dialog_type != JavaScriptDialogType::JAVASCRIPT_DIALOG_TYPE_ALERT &&
-      dialog_type != JavaScriptDialogType::JAVASCRIPT_DIALOG_TYPE_CONFIRM) {
+  // if (dialog_type != JavaScriptDialogType::JAVASCRIPT_DIALOG_TYPE_ALERT &&
+  //    dialog_type != JavaScriptDialogType::JAVASCRIPT_DIALOG_TYPE_CONFIRM) {
+  if (true) {
     std::move(callback).Run(false, base::string16());
     return;
   }
